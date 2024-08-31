@@ -1,11 +1,11 @@
 # Sean Kennedy 
 # Student GPA Checker App
 # Version 1.0
-# Last Updated: 2022-02-20
+# Last Updated: 2024-08-31
 # The app will check students GPAs and tell you if the made deans list or honor roll. 
 
 def get_student_info():
-    # Get student's last name, first name, and GPA
+    # Get student's last name, first name, and GPA q
     last_name = input("Enter student's last name (or 'ZZZ' to quit): ")
     if last_name.upper() == 'ZZZ':
         return None, None, None
