@@ -1,25 +1,25 @@
 
 class Vehicle:
     def __init__(self, vehicle_type):
-        #
+        """
         Initialize the Vehicle class.
 
         Args:
             vehicle_type (str): The type of vehicle (e.g., car, truck, plane, boat, broomstick)
-        #
+        """
         self.vehicle_type = vehicle_type
 
     def display_vehicle_info(self):
-        #
+        """
         Display the vehicle type.
-        #
+        """
         print(f"Vehicle type: {self.vehicle_type}")
 
 
 # Define the Automobile subclass
 class Automobile(Vehicle):
     def __init__(self, vehicle_type, year, make, model, doors, roof):
-        #
+        """
         Initialize the Automobile class.
 
         Args:
@@ -29,7 +29,7 @@ class Automobile(Vehicle):
             model (str): The model of the automobile
             doors (int): The number of doors (2 or 4)
             roof (str): The type of roof (solid or sun roof)
-        #
+        """
         super().__init__(vehicle_type)
         self.year = year
         self.make = make
@@ -38,9 +38,9 @@ class Automobile(Vehicle):
         self.roof = roof
 
     def display_automobile_info(self):
-        #
+        """
         Display the automobile information.
-        #
+        """
         self.display_vehicle_info()
         print(f"Year: {self.year}")
         print(f"Make: {self.make}")
